@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2949bc8-c022-44dc-ac8a-22440b9e6310" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1lebCFnhwYXBL3aAcAIIkZsRjGK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nestjs-todo-app-master" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2949bc8-c022-44dc-ac8a-22440b9e6310" name="Default Changelist" comment="" />
+      <created>1607960374370</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607960374370</updated>
+      <workItem from="1607960375433" duration="3142000" />
+      <workItem from="1607982887398" duration="1891000" />
+      <workItem from="1608442208997" duration="24000" />
+      <workItem from="1609664355433" duration="3161000" />
+      <workItem from="1609691340782" duration="966000" />
+      <workItem from="1609851774319" duration="1858000" />
+      <workItem from="1610870159948" duration="10347000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2494" y="322" width="762" height="443" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609691696390">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2494" y="322" width="762" height="443" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609691696390" />
+    <state x="2610" y="241" width="530" height="605" key="FileChooserDialogImpl" timestamp="1609867340570">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2610" y="241" width="530" height="605" key="FileChooserDialogImpl/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1609867340570" />
+    <state x="736" y="262" key="FileChooserDialogImpl/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1609674248198" />
+    <state width="1890" height="259" key="GridCell.Tab.0.bottom" timestamp="1607964701197">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1890" height="259" key="GridCell.Tab.0.bottom/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1607964701197" />
+    <state width="1890" height="259" key="GridCell.Tab.0.center" timestamp="1607964701197">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1890" height="259" key="GridCell.Tab.0.center/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1607964701197" />
+    <state width="1890" height="259" key="GridCell.Tab.0.left" timestamp="1607964701197">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1890" height="259" key="GridCell.Tab.0.left/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1607964701197" />
+    <state width="1890" height="259" key="GridCell.Tab.0.right" timestamp="1607964701197">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1890" height="259" key="GridCell.Tab.0.right/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1607964701197" />
+    <state x="2237" y="87" width="1286" height="912" key="SettingsEditor" timestamp="1610875326837">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2237" y="87" width="1286" height="912" key="SettingsEditor/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1610875326837" />
+    <state x="2484" y="197" width="791" height="686" key="find.popup" timestamp="1610896717430">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2484" y="197" width="791" height="686" key="find.popup/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1610896717430" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Sidebar/Sidebar.js</url>
+          <line>11</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
