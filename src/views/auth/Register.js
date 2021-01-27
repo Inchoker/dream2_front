@@ -1,35 +1,49 @@
 import React from "react";
 import httpClient from 'react-http-client';
-import ReactHtmlParser from 'react-html-parser'
-import { Link} from "react-router-dom";
-
 export default function Register() {
     const [name, setName] = React.useState();
     const [email, setEmail] = React.useState();
     const [password, setPassword] = React.useState();
-    const [err1, setErr1] = React.useState(null);
-    const [err2, setErr2] = React.useState(null);
-    const [err3, setErr3] = React.useState(null);
+    const [errName, setErrName] = React.useState(null);
+    const [errEmail, setErrEmail] = React.useState(null);
+    const [errPassword, setErrPassword] = React.useState(null);
     const [title,setTitle] = React.useState('Or sign up with credentials')
-    const [displayLinkLogin,setDisplayLinkLogin] = React.useState()
-    const url = 'http://localhost:4000/user'
+    const [agree, setAgree] = React.useState(false)
+    const url = 'http://localhost:5000/user'
     const body = {
         email: email,
         password: password,
         userName: name,
     }
-
+    function setErr(errMessage) {
+        switch (errMessage) {
+            case "userName should not be empty":
+                setErrName('Please input user name');
+                break;
+            case "email should not be empty":
+                setErrEmail('Please input email');
+                break;
+            case "email must be an email":
+                setErrEmail('Invalid email format');
+                break;
+            case "password is too short":
+                setErrPassword('password is too short')
+        }
+    }
     function createNewUser() {
-       setErr1(null)
-       setErr2(null)
-       setErr3(null)
+       setErrName(null)
+       setErrEmail(null)
+       setErrPassword(null)
         httpClient.post(url,body).then((res) => {
                 setTitle(`Successfully created new user, please login`)
         }).catch(e => {
-            // if (err.includes('mail')) setErr2(err)
-            // if (err.includes('ame')) setErr1(err)
-            // if (err.includes('ass')) setErr3(err)
-            console.log( e.message)
+            const errRes = JSON.parse(e.message).data.message;
+            if (Array.isArray(errRes)) {
+                errRes.forEach(setErr)
+            }
+            if (errRes === 'Duplicate Username') {
+                setErrName('user name is already taken')
+            }
         })
     }
     return (
@@ -74,7 +88,6 @@ export default function Register() {
                             <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
                                 <div className="text-gray-500 text-center mb-3 font-bold">
                                     <small>{title}</small>
-                                    <Link to={'./login'} className="text-gray-500 text-center mb-3 font-bold"> Privacy Policy </Link>
                                 </div>
                                 <form>
                                     <div className="relative w-full mb-3">
@@ -83,7 +96,7 @@ export default function Register() {
                                             htmlFor="grid-password"
                                         >
                                             Name
-                                            <small className="red">{err1}</small>
+                                            <small className="red">{errName}</small>
                                         </label>
                                         <input
                                             type="email"
@@ -99,7 +112,7 @@ export default function Register() {
                                             htmlFor="grid-password"
                                         >
                                             Email
-                                            <small className="red">{err2}</small>
+                                            <small className="red">{errEmail}</small>
                                         </label>
                                         <input
                                             type="email"
@@ -115,7 +128,7 @@ export default function Register() {
                                             htmlFor="grid-password"
                                         >
                                             Password
-                                            <small className="red">{err3}</small>
+                                            <small className="red">{errPassword}</small>
                                         </label>
                                         <input
                                             type="password"
@@ -131,6 +144,7 @@ export default function Register() {
                                                 id="customCheckLogin"
                                                 type="checkbox"
                                                 className="form-checkbox text-gray-800 ml-1 w-5 h-5 ease-linear transition-all duration-150"
+                                                onChange={(e) => console.log(e.target.checked)}
                                             />
                                             <span className="ml-2 text-sm font-semibold text-gray-700">
                         I agree with the{" "}

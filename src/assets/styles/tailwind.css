@@ -1143,7 +1143,7 @@ video {
 }
 
 .bg-full {
-  background-size: 100$;
+  background-size: 100%;
 }
 
 .border-collapse {
@@ -2379,6 +2379,10 @@ video {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-1\/5 {
+  width: 20%;
 }
 
 .w-6\/12 {
